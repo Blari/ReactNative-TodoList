@@ -1,5 +1,6 @@
 import React from 'react';
-import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import {View, StyleSheet, TouchableOpacity} from 'react-native';
+import {AppText} from "./UI/AppText";
 
 export const ToDo = ({todo, onRemove, onOpen}) => {
 
@@ -9,7 +10,7 @@ export const ToDo = ({todo, onRemove, onOpen}) => {
             onPress={() => onOpen(todo.id)}
         >
             <View style={style.todo}>
-                <Text>{todo.title}</Text>
+                <AppText>{todo.title}</AppText>
             </View>
         </TouchableOpacity>
     )
