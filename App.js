@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { StyleSheet, View, Alert } from 'react-native';
-import * as Font from "expo-font";
+import Font from "expo-font";
 import {AppLoading} from "expo";
 
 import {Navbar} from "./src/components/Navbar";
@@ -8,7 +8,7 @@ import {MainScreen} from "./src/Screens/MainScreen";
 import {TodoScreen} from "./src/Screens/TodoScreen";
 
 async function loadAplication() {
-    await Font.loadAsync({
+   await Font.loadAsync({
         robotoRegular: require("./assets/fonts/Roboto-Regular.ttf"),
         robotoBold: require("./assets/fonts/Roboto-Bold.ttf")
     })
